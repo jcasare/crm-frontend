@@ -1,0 +1,3 @@
+.entry-page {
+  @apply h-screen w-screen bg-gradient-to-r from-stone-100 via-slate-100 to-blue-100 flex justify-center items-center;
+}
