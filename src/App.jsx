@@ -1,12 +1,15 @@
 import './App.css'
 import PageLayout from './Layout/Layout'
+import Dashboard from './Pages/Dashboard/Dashboard'
 import Entry from './Pages/Entry/EntryPage'
 
 function App() {
   return (
     <div className="app">
       {/* <Entry /> */}
-      <PageLayout>main page contentaaaaaaaaaaaaaaa</PageLayout>
+      <PageLayout>
+        <Dashboard />
+      </PageLayout>
     </div>
   )
 }

@@ -3,17 +3,17 @@ const Header = () => {
   return (
     <div>
       <nav className=" border-gray-200 dark:bg-gray-900">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <div className="flex flex-wrap justify-between mx-auto max-w-fit-xl p-3">
           <a href="/dashboard" className="flex items-center">
-            <img src={Tix} className="h-8 mr-3" alt="TicketXpress Logo" />
+            <img src={Tix} className="h-8 mr-1" alt="TicketXpress Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               TicketXpress
             </span>
           </a>
-          <div className="flex items-center">
+          <div className="flex justify-end max-w-fit align-middle gap-1  text-center float-right">
             <a
               href="tel:233546942929"
-              className="mr-6 text-sm  text-gray-500 dark:text-white hover:underline"
+              className="mr-1 text-sm my-auto text-gray-500 dark:text-white hover:underline"
             >
               (233) 54 694-2929
             </a>
@@ -23,7 +23,7 @@ const Header = () => {
             >
               <button
                 type="button"
-                className="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                className="text-red-700 my-auto hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
               >
                 Logout
               </button>
