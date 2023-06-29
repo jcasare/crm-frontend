@@ -1,8 +1,12 @@
 import TicketTable from '../../components/TicketTable'
 import ticketData from '../../assets/data/tickets.json'
+import Breadcrumb from '../../components/Breadcrumb'
 const Dashboard = () => {
   return (
     <div className="container mx-auto flex flex-col mb-1">
+      <div>
+        <Breadcrumb page={'Dashboard'} />
+      </div>
       <div className="button-container flex  mx-auto">
         <button
           type="button "
