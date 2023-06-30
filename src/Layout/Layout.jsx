@@ -4,7 +4,7 @@ import './partials/pagelayout.modules.css'
 const PageLayout = ({ children }) => {
   return (
     <div className="page-layout h-screen flex flex-col">
-      <header className="header bg-blue-50 mb-4">
+      <header className="header bg-blue-50 ">
         <Header />
       </header>
       <main className="main-content bg-[url('./assets/dashboard-background.jpg')]  overflow-y-auto flex-1">
