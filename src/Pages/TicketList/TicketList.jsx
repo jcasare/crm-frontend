@@ -1,13 +1,29 @@
 import Breadcrumb from '../../components/Breadcrumb'
 import SearchForm from '../../components/SearchForm'
-
+import TicketTable from '../../components/TicketTable'
+import ticketData from '../../assets/data/tickets.json'
+import { useState } from 'react'
 const TicketList = () => {
+  const [filteredTickets, setFilteredTickets] = useState(ticketData)
+
+  const updateFilteredTickets = (searchQuery) => {
+    const filtered = ticketData.filter((ticket) => {
+      return (
+        ticket.id.toString().includes(searchQuery) ||
+        ticket.status.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (ticket.scope &&
+          ticket.scope.toLowerCase().includes(searchQuery.toLowerCase()))
+      )
+    })
+    setFilteredTickets(filtered)
+  }
+
   return (
     <div className="container ">
       <div>
         <Breadcrumb page={'Ticket List'} />
       </div>
-      <div className=" px-2 button-container  mt-2 flex  sm:px-0 lg:px-3 lg:ml-2 ">
+      <div className=" px-2 button-container my-2 flex  sm:px-0 lg:px-3 lg:ml-2 ">
         <div className="new-ticket-btn">
           <button
             type="button"
@@ -16,7 +32,11 @@ const TicketList = () => {
             New Ticket
           </button>
         </div>
-        <SearchForm />
+        <SearchForm onUpdateSearch={updateFilteredTickets} />
+      </div>
+      <hr className="" />
+      <div className="recent-tickets ">
+        <TicketTable tickets={filteredTickets} />
       </div>
     </div>
   )
