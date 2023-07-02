@@ -23,7 +23,7 @@ const TicketList = () => {
       <div>
         <Breadcrumb page={'Ticket List'} />
       </div>
-      <div className=" px-2 button-container my-2 flex  sm:px-0 lg:px-3 lg:ml-2 ">
+      <div className=" px-2 button-container my-3 flex  sm:px-0 lg:px-3 lg:ml-2 ">
         <div className="new-ticket-btn">
           <button
             type="button"

@@ -8,6 +8,9 @@ export default {
         0.88: '88%',
       },
     },
+    screens: {
+      phone: { max: '480px' },
+    },
   },
   plugins: [],
 }

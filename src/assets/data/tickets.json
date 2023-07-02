@@ -3,7 +3,27 @@
     "id": 1,
     "status": "Pending",
     "scope": "Server",
-    "addedAt": "2023-09-23"
+    "addedAt": "2023-09-23",
+    "chatBox": [
+      {
+        "id": 1,
+        "date": "2023-05-04",
+        "message": "Hola Amigo",
+        "author": "client"
+      },
+      {
+        "id": 2,
+        "date": "2023-05-04",
+        "message": "E hard o",
+        "author": "operator"
+      },
+      {
+        "id": 3,
+        "date": "2023-05-04",
+        "message": "Still not working",
+        "author": "client"
+      }
+    ]
   },
   {
     "id": 2,
